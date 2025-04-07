@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebaran Saya</title>
+    <style>
+        /* Mengatur body untuk menggunakan gambar latar belakang penuh */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            height: 100vh; /* Mengatur tinggi layar agar menutupi seluruh halaman */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('keluarga jua .jpg') no-repeat center center fixed;
+            background-size: cover; /* Membuat gambar latar belakang menutupi seluruh layar */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Overlay gelap agar teks terlihat lebih jelas */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Latar belakang putih transparan */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #0287afe5;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            animation: fadeIn 1.5s forwards 0.7s;
+        }
+
+        .profile {
+            margin-top: 20px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1.5s forwards 1s;
+        }
+
+        /* Styling untuk toolbar */
+        .toolbar {
+            background-color: rgba(0, 191, 255, 0.8); /* Semi transparan */
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .toolbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .toolbar a:hover {
+            background-color: #1dc6ffdd;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="container">
+            <!-- Toolbar di dalam konten -->
+            <div class="toolbar">
+                <a href="lebaran-hari1.html">Hari Pertama</a>
+                <a href="lebaran-hari2.html">Hari Kedua</a>
+                <a href="lebaran-hari3.html">keluarga saya</a>
+            </div>
+            
+            <h1>Selamat Datang di Beranda Lebaran Saya</h1>
+            <div class="profile">
+                <img src="foto jua cantik.jpg" alt="Foto Saya">
+            </div>
+            <p>Halo! Selamat datang di halaman Lebaran saya. Di sini saya akan berbagi momen spesial saya selama Lebaran. Semoga kita semua diberkahi dengan kebahagiaan dan kebersamaan.</p>
+        </div>
+    </div>
+
+</body>
+</html>

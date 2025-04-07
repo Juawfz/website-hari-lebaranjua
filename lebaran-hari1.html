@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebaran Hari Pertama</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .toolbar {
+            background-color: rgba(0, 191, 255, 0.9);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .toolbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .toolbar a:hover {
+            background-color: #ff6f61;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 120px auto 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #0287afe5;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            width: 280px;
+            height: 280px;
+            background-color: #f3f3f3;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeInScale 1.5s forwards;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery-item p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 1rem;
+            padding: 10px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .gallery-item:hover p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes fadeInScale {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Background Animasi */
+        .background-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('foto-keluarga.jpg') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(8px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Animasi Latar Belakang -->
+    <div class="background-animation"></div>
+
+    <div class="toolbar">
+        <a href="utama.html">Beranda</a>
+        <a href="lebaran-hari2.html">Hari Kedua</a>
+        <a href="lebaran-hari3.html">keluarga saya</a>
+    </div>
+
+    <div class="container">
+        <h1>Lebaran Hari Pertama</h1>
+        <p>Selamat datang di halaman Lebaran Hari Pertama! Berikut adalah beberapa momen spesial yang saya abadikan selama Lebaran tahun ini.</p>
+        
+        <div class="gallery">
+            <!-- Foto 1 -->
+            <div class="gallery-item" style="animation-delay: 0.3s;">
+                <img src="solat.jpg" alt="Momen Lebaran 1">
+                <p>Ini adalah foto pada saat kami sholat idul fitri di masjid terdekat dengan rumah</p>
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="gallery-item" style="animation-delay: 0.6s;">
+                <img src="keluarga jua .jpg" alt="Momen Lebaran 2">
+                <p>Di hari pertama, kami saling bermaafan dan foto keluarga bersama ibu ayah dan adik adik saya</p>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="gallery-item" style="animation-delay: 0.9s;">
+                <img src="foto sendiri.jpg" alt="Momen Lebaran 3">
+                <p>ini adalah outfit saya lebaran pertama</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
